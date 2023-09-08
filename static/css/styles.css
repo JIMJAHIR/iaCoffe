@@ -1,0 +1,29 @@
+/* Estilos para el encabezado */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos para el formulario */
+form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos para la imagen cargada */
+#image {
+  display: none; /* Oculta la imagen inicialmente */
+  max-width: 100%;
+  max-height: 100%;
+  margin: 20px auto; /* Centra la imagen horizontalmente y agrega espacio arriba y abajo */
+  width: 600px; /* Establece el ancho deseado */
+  height: 300px; /* Establece la altura deseada */
+}
+
+/* Estilos para el resultado de la predicción */
+#result {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  color: green; /* Cambia el color según sea necesario */
+}
