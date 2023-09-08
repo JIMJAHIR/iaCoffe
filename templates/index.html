@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Predicción de Enfermedades en Hojas de Café</title>
-    <link rel="stylesheet" type="text/css" href="templates/assets/estilos.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <h1>Predicción de Enfermedades en Hojas de Café</h1>
@@ -12,6 +12,6 @@
     </form>
     <div id="result">{{ result }}</div>
     <img id="image" src="" alt="Imagen cargada">
-    <script src="templates/assets/script.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
