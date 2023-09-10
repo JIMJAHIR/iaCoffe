@@ -1,18 +1,35 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Predicción de Enfermedades en Hojas de Café</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Predicción de Enfermedades en Hojas de Café</h1>
-    <form method="POST" enctype="multipart/form-data">
-        <input type="file" name="file" accept=".jpg, .jpeg, .png">
-        <input type="submit" value="Predecir">
-    </form>
-    <div id="result">{{ result }}</div>
-    <img id="image" src="" alt="Imagen cargada">
-    <script src="../static/js/main.js"></script>
+    <header class="nav_header">
+        <div class="nav_name">
+            <p> IA Coffe Jahir Sánchez</p>
+        </div>
+
+        <div class="nav_menu">
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <!--<li><a href="/enfermedades">Enfermedades</a></li>-->
+                <li><a href="/predecir">Predecir</a></li>
+                <!--<li><a href="/info">Mas información</a></li>-->
+            </ul>
+        </div>
+    </header>
+
+    <footer>
+        <p>&copy; 2023 Jahir Sánchez. Todos los derechos reservados.</p>
+    </footer>
 </body>
+
 </html>
