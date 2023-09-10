@@ -21,10 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
           // Desplázate automáticamente hacia la imagen
           window.scrollTo(0, imageElement.offsetTop);
-
-          // Opcional: Envía la imagen al servidor para la predicción
-          // (Implementa esto en la comunicación con el servidor Flask)
-          // Aquí puedes realizar una solicitud POST al servidor Flask con la imagen.
       }
   });
 });
